@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{09C1EDC3-9C37-3EC6-9A72-C4F79C239FB9}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>dlib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Work2\dlib-19.1\dlib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dlib.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dlib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Work2\dlib-19.1\dlib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dlib.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dlib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Work2\dlib-19.1\dlib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dlib.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dlib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Work2\dlib-19.1\dlib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dlib.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dlib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;_DEBUG;ENABLE_ASSERTS;DLIB_JPEG_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;_DEBUG;ENABLE_ASSERTS;DLIB_JPEG_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;NDEBUG;DLIB_JPEG_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;NDEBUG;DLIB_JPEG_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;NDEBUG;DLIB_JPEG_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;NDEBUG;DLIB_JPEG_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;NDEBUG;DLIB_JPEG_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;NDEBUG;DLIB_JPEG_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\external\libpng;H:\Work2\dlib-19.1\dlib\external\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Work2\dlib-19.1\dlib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/Work2/dlib-19.1/dlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/Work2/dlib-19.1/dlib/CMakeLists.txt;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;H:\Work2\dlib-19.1\dlib\config.h.in;H:\Work2\dlib-19.1\dlib\revision.h.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlibConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlib.pc.in;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/Work2/dlib-19.1/dlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/Work2/dlib-19.1/dlib/CMakeLists.txt;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;H:\Work2\dlib-19.1\dlib\config.h.in;H:\Work2\dlib-19.1\dlib\revision.h.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlibConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlib.pc.in;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/Work2/dlib-19.1/dlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:/Work2/dlib-19.1/dlib/CMakeLists.txt;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;H:\Work2\dlib-19.1\dlib\config.h.in;H:\Work2\dlib-19.1\dlib\revision.h.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlibConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlib.pc.in;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/Work2/dlib-19.1/dlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:/Work2/dlib-19.1/dlib/CMakeLists.txt;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;H:\Work2\dlib-19.1\dlib\config.h.in;H:\Work2\dlib-19.1\dlib\revision.h.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlibConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;H:\Work2\dlib-19.1\dlib\cmake_utils\dlib.pc.in;H:\Work2\dlib-19.1\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Work2\dlib-19.1\dlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\base64\base64_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\bigint\bigint_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\bigint\bigint_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\bit_stream\bit_stream_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\entropy_decoder\entropy_decoder_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\entropy_decoder\entropy_decoder_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\entropy_encoder\entropy_encoder_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\entropy_encoder\entropy_encoder_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\md5\md5_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\tokenizer\tokenizer_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\unicode\unicode.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\data_io\image_dataset_metadata.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\data_io\mnist.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\sockets\sockets_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\bsp\bsp.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\dir_nav\dir_nav_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\dir_nav\dir_nav_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\dir_nav\dir_nav_extensions.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\linker\linker_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\logger\extra_logger_headers.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\logger\logger_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\logger\logger_config_file.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\misc_api\misc_api_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\misc_api\misc_api_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\sockets\sockets_extensions.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\sockets\sockets_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\sockstreambuf\sockstreambuf.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\sockstreambuf\sockstreambuf_unbuffered.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\server\server_kernel.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\server\server_iostream.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\server\server_http.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\threads\multithreaded_object_extension.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\threads\threaded_object_extension.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\threads\threads_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\threads\threads_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\threads\threads_kernel_shared.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\threads\thread_pool_extension.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\threads\async.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\timer\timer.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\stack_trace.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_widgets\fonts.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_widgets\widgets.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_widgets\drawable.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_widgets\canvas_drawing.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_widgets\style.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_widgets\base_widgets.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_core\gui_core_kernel_1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\gui_core\gui_core_kernel_2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\png.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngerror.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngget.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngmem.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngpread.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngread.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngrio.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngrtran.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngrutil.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngset.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngtrans.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngwio.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngwrite.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngwtran.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libpng\pngwutil.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\adler32.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\compress.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\crc32.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\deflate.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\gzclose.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\gzlib.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\gzread.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\gzwrite.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\infback.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\inffast.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\inflate.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\inftrees.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\trees.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\uncompr.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\zlib\zutil.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\image_loader\png_loader.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\image_saver\save_png.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcomapi.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdapimin.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdapistd.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdatasrc.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdcoefct.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdcolor.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jddctmgr.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdhuff.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdinput.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdmainct.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdmarker.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdmaster.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdmerge.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdphuff.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdpostct.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdsample.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jerror.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jidctflt.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jidctfst.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jidctint.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jidctred.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jmemmgr.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jmemnobs.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jquant1.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jquant2.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jutils.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcapimin.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jdatadst.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcparam.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcapistd.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcmarker.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcinit.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcmaster.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcdctmgr.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jccoefct.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jccolor.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jchuff.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcmainct.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcphuff.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcprepct.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jcsample.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jfdctint.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jfdctflt.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\external\libjpeg\jfdctfst.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\image_loader\jpeg_loader.cpp"  />
+    <ClCompile Include="H:\Work2\dlib-19.1\dlib\image_saver\save_jpeg.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:/Work2/dlib-19.1/ZERO_CHECK.vcxproj">
+      <Project>C1A71716-DED8-3840-A3C2-44FA90B33FAF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

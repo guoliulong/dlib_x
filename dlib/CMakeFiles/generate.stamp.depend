@@ -1,0 +1,32 @@
+# CMake generation dependency list for this directory.
+H:/Work2/dlib-19.1/dlib/CMakeLists.txt
+H:/Work2/dlib-19.1/dlib/cmake_utils/release_build_by_default
+H:/Work2/dlib-19.1/dlib/cmake_utils/use_cpp_11.cmake
+H:/Work2/dlib-19.1/dlib/cmake_utils/add_global_compiler_switch.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+H:/Work2/dlib-19.1/dlib/cmake_utils/add_global_compiler_switch.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPNG.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindJPEG.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
+H:/Work2/dlib-19.1/dlib/config.h.in
+H:/Work2/dlib-19.1/dlib/revision.h.in
+H:/Work2/dlib-19.1/dlib/cmake_utils/dlibConfig.cmake.in
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+H:/Work2/dlib-19.1/dlib/cmake_utils/dlib.pc.in

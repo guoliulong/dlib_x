@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+H:/Work2/dlib-19.1/examples/CMakeLists.txt
+H:/Work2/dlib-19.1/dlib/cmake
+H:/Work2/dlib-19.1/dlib/cmake_utils/add_global_compiler_switch.cmake
+H:/Work2/dlib-19.1/dlib/cmake_utils/use_cpp_11.cmake
+H:/Work2/dlib-19.1/dlib/cmake_utils/add_global_compiler_switch.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckIncludeFileCXX.cmake
+H:/Work2/dlib-19.1/dlib/cmake_utils/release_build_by_default
+D:/Program Files/opencv/build/OpenCVConfig-version.cmake
+D:/Program Files/opencv/build/OpenCVConfig.cmake
+D:/Program Files/opencv/build/x64/vc11/lib/OpenCVConfig.cmake
+D:/Program Files/opencv/build/x64/vc11/lib/OpenCVModules.cmake
+D:/Program Files/opencv/build/x64/vc11/lib/OpenCVModules-debug.cmake
+D:/Program Files/opencv/build/x64/vc11/lib/OpenCVModules-release.cmake

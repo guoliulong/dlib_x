@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='mytrainpic\IMG_20160827_232319.jpg'>
+    <box top='220' left='108' width='278' height='329'>
+      <part name='1' x='185' y='304'/>
+      <part name='2' x='183' y='341'/>
+      <part name='3' x='315' y='300'/>
+      <part name='4' x='319' y='338'/>
+      <part name='5' x='255' y='443'/>
+      <part name='6' x='256' y='473'/>
+      <part name='7' x='209' y='455'/>
+      <part name='8' x='303' y='454'/>
+    </box>
+  </image>
+  <image file='mytrainpic\IMG_20160827_232324.jpg'>
+    <box top='231' left='119' width='266' height='307'>
+      <part name='1' x='189' y='313'/>
+      <part name='2' x='192' y='335'/>
+      <part name='3' x='319' y='311'/>
+      <part name='4' x='317' y='333'/>
+      <part name='5' x='256' y='432'/>
+      <part name='6' x='256' y='465'/>
+      <part name='7' x='204' y='435'/>
+      <part name='8' x='315' y='427'/>
+    </box>
+  </image>
+  <image file='mytrainpic\IMG_20160827_232327.jpg'>
+    <box top='252' left='136' width='237' height='288'>
+      <part name='1' x='186' y='307'/>
+      <part name='2' x='185' y='339'/>
+      <part name='3' x='318' y='302'/>
+      <part name='4' x='320' y='335'/>
+      <part name='5' x='270' y='441'/>
+      <part name='6' x='267' y='468'/>
+      <part name='7' x='213' y='452'/>
+      <part name='8' x='317' y='435'/>
+    </box>
+  </image>
+  <image file='mytrainpic\IMG_20160827_232330.jpg'>
+    <box top='255' left='138' width='223' height='266'>
+      <part name='1' x='185' y='307'/>
+      <part name='2' x='185' y='334'/>
+      <part name='3' x='317' y='301'/>
+      <part name='4' x='317' y='332'/>
+      <part name='5' x='245' y='445'/>
+      <part name='6' x='239' y='468'/>
+      <part name='7' x='195' y='440'/>
+      <part name='8' x='296' y='450'/>
+    </box>
+  </image>
+  <image file='mytrainpic\IMG_20160827_232335.jpg'>
+    <box top='268' left='117' width='254' height='289'>
+      <part name='1' x='185' y='303'/>
+      <part name='2' x='186' y='327'/>
+      <part name='3' x='316' y='303'/>
+      <part name='4' x='315' y='327'/>
+      <part name='5' x='255' y='431'/>
+      <part name='6' x='255' y='495'/>
+      <part name='7' x='203' y='442'/>
+      <part name='8' x='304' y='441'/>
+    </box>
+  </image>
+</images>
+</dataset>

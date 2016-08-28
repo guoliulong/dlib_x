@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4E89158D-9F84-3C68-96F5-A5DB1E74F759}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\..;D:\Program Files\opencv\build\include;D:\Program Files\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\..;D:\Program Files\opencv\build\include;D:\Program Files\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\..;D:\Program Files\opencv\build\include;D:\Program Files\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Work2\dlib-19.1\dlib\..;D:\Program Files\opencv\build\include;D:\Program Files\opencv\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Work2\dlib-19.1\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/Work2/dlib-19.1/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/Work2/dlib-19.1/examples/CMakeLists.txt;H:\Work2\dlib-19.1\examples\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFileCXX.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;D:\Program Files\opencv\build\OpenCVConfig-version.cmake;D:\Program Files\opencv\build\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-debug.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-release.cmake;H:\Work2\dlib-19.1\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/Work2/dlib-19.1/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/Work2/dlib-19.1/examples/CMakeLists.txt;H:\Work2\dlib-19.1\examples\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFileCXX.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;D:\Program Files\opencv\build\OpenCVConfig-version.cmake;D:\Program Files\opencv\build\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-debug.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-release.cmake;H:\Work2\dlib-19.1\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/Work2/dlib-19.1/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:/Work2/dlib-19.1/examples/CMakeLists.txt;H:\Work2\dlib-19.1\examples\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFileCXX.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;D:\Program Files\opencv\build\OpenCVConfig-version.cmake;D:\Program Files\opencv\build\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-debug.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-release.cmake;H:\Work2\dlib-19.1\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/Work2/dlib-19.1/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HH:/Work2/dlib-19.1 -BH:/Work2/dlib-19.1 --check-stamp-file H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:/Work2/dlib-19.1/examples/CMakeLists.txt;H:\Work2\dlib-19.1\examples\CMakeLists.txt;H:\Work2\dlib-19.1\dlib\cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\use_cpp_11.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\add_global_compiler_switch.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFileCXX.cmake;H:\Work2\dlib-19.1\dlib\cmake_utils\release_build_by_default;D:\Program Files\opencv\build\OpenCVConfig-version.cmake;D:\Program Files\opencv\build\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVConfig.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-debug.cmake;D:\Program Files\opencv\build\x64\vc11\lib\OpenCVModules-release.cmake;H:\Work2\dlib-19.1\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Work2\dlib-19.1\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:/Work2/dlib-19.1/ZERO_CHECK.vcxproj">
+      <Project>C1A71716-DED8-3840-A3C2-44FA90B33FAF</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/3d_point_cloud_ex.vcxproj">
+      <Project>AF5EE8CC-EE9C-32E1-856C-8E7CAE825BF3</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/My_train_shape_predictor_ex.vcxproj">
+      <Project>58C51C13-72A6-38F8-9F7F-80CF70710B1B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/Myface_landmark_detection_ex.vcxproj">
+      <Project>5D33BEA0-A77C-3B11-B547-7053729C9DDF</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/Mywebcam_face_pose_ex.vcxproj">
+      <Project>B232A3E3-11E3-3A96-B155-60F087DE76C1</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/assignment_learning_ex.vcxproj">
+      <Project>08F93DCA-09A2-311E-B4BD-E717C19C2DAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/bayes_net_ex.vcxproj">
+      <Project>96CDB0A8-C570-3A76-B8BD-AA4BDDFFDFBC</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/bayes_net_from_disk_ex.vcxproj">
+      <Project>E21980EF-15B4-3C29-BDB2-0109C5BFC5DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/bayes_net_gui_ex.vcxproj">
+      <Project>988ED0CD-F46E-3F09-A427-65CE275D94C6</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/bridge_ex.vcxproj">
+      <Project>FCDC6E89-2014-3229-BD33-830E807E8C7D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/bsp_ex.vcxproj">
+      <Project>1E494D3E-CEBA-3859-A021-0392E6F73ADB</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/compress_stream_ex.vcxproj">
+      <Project>B7473924-7821-320A-A1C1-B345F297CE49</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/config_reader_ex.vcxproj">
+      <Project>CA2674E6-74FF-3073-AC3B-B7276B5F1374</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/custom_trainer_ex.vcxproj">
+      <Project>DFE3053C-1232-3640-8774-996EE6324C0B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/dir_nav_ex.vcxproj">
+      <Project>26970E1D-F897-37A8-B90A-EADDA334A32C</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/empirical_kernel_map_ex.vcxproj">
+      <Project>AC515131-6587-31CC-82A8-5E0ECA181BE6</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/face_detection_ex.vcxproj">
+      <Project>6EBAEAB5-86FA-34DE-B657-974E507CDAF8</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/face_landmark_detection_ex.vcxproj">
+      <Project>090C11D7-48FD-35F3-8978-516D92410D7B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/fhog_ex.vcxproj">
+      <Project>7BADA119-8FDF-3465-BDDC-A76F491EB177</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/fhog_object_detector_ex.vcxproj">
+      <Project>D1AFF822-6D09-3BFC-BE2B-3E035FEBF584</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/file_to_code_ex.vcxproj">
+      <Project>9CE3AA5F-14C7-36D4-9CBD-3CB739FC038C</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/graph_labeling_ex.vcxproj">
+      <Project>ADAADD3B-0DA2-3A76-B620-6794058A3C3D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/gui_api_ex.vcxproj">
+      <Project>4CB46144-0D70-39C4-AD30-18FB987E8C2A</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/hough_transform_ex.vcxproj">
+      <Project>0B002179-3C52-3AAB-AD53-A4E61BFF9705</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/image_ex.vcxproj">
+      <Project>20754416-CAC3-3190-8D65-B03776A57EAB</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/integrate_function_adapt_simp_ex.vcxproj">
+      <Project>ABB16A3F-855A-3636-B8BC-37F194EC618B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/iosockstream_ex.vcxproj">
+      <Project>559D7D78-546D-35A1-97F4-0338FB1F2D0E</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/kcentroid_ex.vcxproj">
+      <Project>C755C41D-7DA4-37D2-8B4D-33C7B61DDA7B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/kkmeans_ex.vcxproj">
+      <Project>D679C5DF-FF2D-3976-9122-5FBFC553E331</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/krls_ex.vcxproj">
+      <Project>788D11C3-DA0B-3845-A809-5F3E83F53C21</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/krls_filter_ex.vcxproj">
+      <Project>CE6C27F2-2931-3B91-9F77-482E5308C4C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/krr_classification_ex.vcxproj">
+      <Project>FB64A071-8025-3E01-864A-44C811A03C75</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/krr_regression_ex.vcxproj">
+      <Project>C6775B4E-D9A3-387D-8554-60935CA8C03E</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/learning_to_track_ex.vcxproj">
+      <Project>43C17832-946C-33DB-8253-CA482D4BABC3</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/least_squares_ex.vcxproj">
+      <Project>6F1C5AAE-E5F8-37F3-9D24-1C440FDA7305</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/linear_manifold_regularizer_ex.vcxproj">
+      <Project>FD10FA4D-D749-38F8-8CDF-55CECCFB32E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/logger_custom_output_ex.vcxproj">
+      <Project>13B07894-B6DF-3409-8AA3-34ECA689CDD1</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/logger_ex.vcxproj">
+      <Project>6277207D-99A5-34B0-BED3-58441EA37387</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/logger_ex_2.vcxproj">
+      <Project>2117147B-D40E-339F-B8ED-0C2A78909682</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/matrix_ex.vcxproj">
+      <Project>4F6EE447-E7E0-306C-9579-31476FCA31B6</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/matrix_expressions_ex.vcxproj">
+      <Project>BD62B74A-9233-3919-A1CC-0409ED313B12</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/max_cost_assignment_ex.vcxproj">
+      <Project>968853DA-0133-3328-A936-A1F87291B9BA</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/member_function_pointer_ex.vcxproj">
+      <Project>2608A24F-E803-389E-A24E-8BC8BEEA0FA0</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/mlp_ex.vcxproj">
+      <Project>73819905-7F93-35CB-98A7-AAE0D7BA0AF5</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/model_selection_ex.vcxproj">
+      <Project>272BCC43-A367-3D3A-8394-6C17295713F9</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/mpc_ex.vcxproj">
+      <Project>DF8E3B76-5D22-31E9-A3A2-06D79756F5EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/multiclass_classification_ex.vcxproj">
+      <Project>A020C4AD-5E17-328A-878C-1D3DBAA65EFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/multithreaded_object_ex.vcxproj">
+      <Project>89566449-D544-3A35-BCD2-CA5B489C7DE2</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/object_detector_advanced_ex.vcxproj">
+      <Project>0A5BCA44-4747-3CB6-9D41-7EFD3A1DCBF8</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/object_detector_ex.vcxproj">
+      <Project>576CDBAB-A952-3799-A1A0-46C428D16BF0</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/one_class_classifiers_ex.vcxproj">
+      <Project>A47EE802-D9E0-3852-85A8-647467630AB8</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/optimization_ex.vcxproj">
+      <Project>457ED56D-9935-3773-BDBC-CCEC54C5B3D5</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/parallel_for_ex.vcxproj">
+      <Project>04DCA420-E962-37BF-A6DF-8E31246C7770</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/pipe_ex.vcxproj">
+      <Project>A633D8F6-8E10-3BBF-BCAA-701CBF58EC3F</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/pipe_ex_2.vcxproj">
+      <Project>E9240ABD-67DC-3AA6-9B5B-ACC434DD7B98</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/quantum_computing_ex.vcxproj">
+      <Project>1EFC7C60-586F-3183-BEEA-4EC122B7D95D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/queue_ex.vcxproj">
+      <Project>F2F965A9-4519-3B14-843B-A87D725FC590</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/rank_features_ex.vcxproj">
+      <Project>D786DCF4-C8E0-38EF-BFE5-DA1205556185</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/running_stats_ex.vcxproj">
+      <Project>9800B18A-5184-3CDF-AC1C-743140A0A818</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/rvm_ex.vcxproj">
+      <Project>44534716-521A-30F4-BFCD-7A71EB1A045F</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/rvm_regression_ex.vcxproj">
+      <Project>FFE4D930-F61C-3D84-97B1-39F05ECCD064</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/sequence_labeler_ex.vcxproj">
+      <Project>669BDB88-4AE2-3CF7-83BF-85E25B5D02EA</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/sequence_segmenter_ex.vcxproj">
+      <Project>4A725166-0A3C-3408-B270-5132E536A3E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/server_http_ex.vcxproj">
+      <Project>8B17AB32-B98F-30A4-9134-42C5DD6FD323</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/server_iostream_ex.vcxproj">
+      <Project>7CF1CE6E-10DC-311E-B5A1-5C15E3F23C14</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/sockets_ex.vcxproj">
+      <Project>25900B26-3566-36D5-809E-9EFE91CDB189</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/sockstreambuf_ex.vcxproj">
+      <Project>B68AB6B5-CF42-327E-8DF5-BAB568E6CB0D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/std_allocator_ex.vcxproj">
+      <Project>14C98FCC-2EA3-3363-A590-AB9A4EC9064C</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/surf_ex.vcxproj">
+      <Project>7EC6292D-FC1A-34B4-80D4-29BD65D59F65</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/svm_c_ex.vcxproj">
+      <Project>5C1771CA-5729-3CC9-A948-5AFEE5BFB297</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/svm_ex.vcxproj">
+      <Project>46A465A9-3A7A-3E55-93F3-2FD5251B352D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/svm_pegasos_ex.vcxproj">
+      <Project>80953531-5AFF-3C0B-A416-44AACFE715ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/svm_rank_ex.vcxproj">
+      <Project>F0495DE4-BFD6-3057-AA1E-C4FAA7000999</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/svm_sparse_ex.vcxproj">
+      <Project>AF2A292D-F03C-3C7D-B5AF-1CD8356FCE8B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/svm_struct_ex.vcxproj">
+      <Project>381A3920-9D7C-33DC-BC56-CA68F8D8F157</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/svr_ex.vcxproj">
+      <Project>8F94ED35-ECE6-3E91-9208-E16155980FEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/thread_function_ex.vcxproj">
+      <Project>A6F89C6D-47BD-3D57-A932-78887AE973A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/thread_pool_ex.vcxproj">
+      <Project>979BC7B8-AC8B-3F17-87F9-630C3B80F6DA</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/threaded_object_ex.vcxproj">
+      <Project>6CB958C8-D701-31D1-88B6-C0E6AE587432</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/threads_ex.vcxproj">
+      <Project>884868B1-C4E1-3232-9363-4BAE98938C25</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/timer_ex.vcxproj">
+      <Project>6ADDC2F0-8563-3E80-B9C6-DEC71416062D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/train_object_detector.vcxproj">
+      <Project>C3998E43-C8DD-37D6-A59A-19010619333E</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/train_shape_predictor_ex.vcxproj">
+      <Project>65562D17-BA51-3108-B70B-9547246C2995</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/using_custom_kernels_ex.vcxproj">
+      <Project>A33139FF-90BE-3CA1-987E-CAACAE4A8D94</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/video_tracking_ex.vcxproj">
+      <Project>0DF943E1-5A81-33AE-AD2B-31F76828E0BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/webcam_face_pose_ex.vcxproj">
+      <Project>76C85DA8-D032-3805-9F9A-0A7603CC9334</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/Work2/dlib-19.1/examples/xml_parser_ex.vcxproj">
+      <Project>2FEB8A1F-B3C6-3211-A649-6113BA7A94F3</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -37,6 +37,22 @@ std::vector<std::vector<double> > get_interocular_distances (
 !*/
 
 // ----------------------------------------------------------------------------------------
+#include <stdio.h>
+
+static void printTime()
+{
+	struct tm *ptr;
+	time_t It;
+
+	It = time(NULL);
+	ptr = localtime(&It);
+
+	printf("%d:%d:%d\n", ptr->tm_hour, ptr->tm_min, ptr->tm_sec);
+	
+}
+
+
+
 
 int main(int argc, char** argv)
 {
@@ -88,9 +104,11 @@ int main(int argc, char** argv)
         // tool which can be found in the tools/imglab folder.  It is a simple
         // graphical tool for labeling objects in images.  To see how to use it
         // read the tools/imglab/README.txt file.
-        load_image_dataset(images_train, faces_train, faces_directory+"/mytrain.xml");
-        load_image_dataset(images_test, faces_test, faces_directory+"/mytrain.xml");
-
+		printTime();
+        load_image_dataset(images_train, faces_train, faces_directory);
+        //load_image_dataset(images_test, faces_test, faces_directory);
+		cout << "\nloadimage over!" << endl;
+		printTime();
         // Now make the object responsible for training the model.  
         shape_predictor_trainer trainer;
         // This algorithm has a bunch of parameters you can mess with.  The
@@ -107,19 +125,25 @@ int main(int argc, char** argv)
         // smaller depths.  
         trainer.set_nu(0.05);
         trainer.set_tree_depth(2);
-
+		//trainer.set_num_trees_per_cascade_level()
         // some parts of training process can be parellelized.
         // Trainer will use this count of threads when possible
-        trainer.set_num_threads(4);
+
+		SYSTEM_INFO sysInfo;
+		GetSystemInfo(&sysInfo);
+		trainer.set_num_threads(sysInfo.dwNumberOfProcessors * 2 );
 
         // Tell the trainer to print status messages to the console so we can
         // see how long the training will take.
         trainer.be_verbose();
 
+		cout << "\nstart train¡£¡£¡£!" << endl;
+		printTime();
         // Now finally generate the shape model
         shape_predictor sp = trainer.train(images_train, faces_train);
 		 serialize("sp.dat") << sp;
-
+		 cout << "\ntrain over!" << endl;
+		 printTime();
         // Now that we have a model we can test it.  This function measures the
         // average distance between a face landmark output by the
         // shape_predictor and where it should be according to the truth data.
@@ -135,8 +159,8 @@ int main(int argc, char** argv)
         // extremely high, but it's still doing quite good.  Moreover, if you
         // train it on one of the large face landmarking datasets you will
         // obtain state-of-the-art results, as shown in the Kazemi paper.
-        cout << "mean testing error:  "<< 
-            test_shape_predictor(sp, images_test, faces_test, get_interocular_distances(faces_test)) << endl;
+       // cout << "mean testing error:  "<< 
+       //     test_shape_predictor(sp, images_test, faces_test, get_interocular_distances(faces_test)) << endl;
 
         // Finally, we save the model to disk so we can use it later.
         serialize("sp.dat") << sp;
